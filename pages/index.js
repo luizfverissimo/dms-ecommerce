@@ -1,5 +1,5 @@
 const Home = () => (
- <h1 className="text-8xl text-[#FF69B4]">Olá Mundão!!!</h1>
+ <h1 className="font-catamaran font-semibold text-8xl text-theme-black">Olá Mundão!!!</h1>
 )
 
 export default Home
