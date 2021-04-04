@@ -1,17 +1,5 @@
-import Layout from '../components/layout'
-import { attributes, html } from '../content/home.md'
-
 const Home = () => (
-  <Layout>
-    <h1>{attributes.title}</h1>
-    <div dangerouslySetInnerHTML={{ __html: html }} />
-    <style jsx>{`
-      h1,
-      div {
-        text-align: center;
-      }
-    `}</style>
-  </Layout>
+ <h1 className="text-8xl text-[#FF69B4]">Olá Mundão!!!</h1>
 )
 
 export default Home
