@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700&family=Merriweather+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;900&family=Merriweather+Sans:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,4 +8,16 @@ body {
 	background-color: #F2F2F2;
 	min-height: 100vh;
 	scroll-behavior: smooth;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
 }
