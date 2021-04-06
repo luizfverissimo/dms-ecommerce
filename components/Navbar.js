@@ -14,14 +14,14 @@ export const NavBar = () => {
             <a
               aria-label='Company'
               title='Company'
-              class='inline-flex items-center'
+              className='inline-flex items-center'
             >
               <Logo />
             </a>
           </Link>
           <ul class='flex items-center hidden space-x-8 lg:flex'>
             <li>
-              <Link href='/'>
+              <Link href="#lancamentos">
                 <a
                   aria-label='Lançamentos'
                   title='Lançamentos'
