@@ -1,9 +1,9 @@
 function InstagramIcon() {
   return (
     <svg
-      className="fill-current text-theme-white transition-all hover:text-theme-yellow"
-      width='30'
-      height='34'
+      className="fill-current text-theme-black"
+      width='46'
+      height='46'
       viewBox='0 0 30 34'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

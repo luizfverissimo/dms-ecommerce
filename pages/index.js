@@ -1,10 +1,11 @@
+import About from "../components/About";
 import Hero from "../components/Hero";
 import { NavBar } from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import SectionHeading from "../components/SectionHeading";
 
 const Home = () => (
-  <main className="w=full flex flex-col items-center mb-20">
+  <main className="w=full flex flex-col items-center">
     <NavBar/>
     <Hero/>
     <section className="px-8 w-full max-w-7xl flex flex-col" >
@@ -18,8 +19,8 @@ const Home = () => (
         <ProductCard />
         <ProductCard />
       </div>
-
     </section>
+    <About/>
   </main>
 );
 
