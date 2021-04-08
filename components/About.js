@@ -6,7 +6,7 @@ function About() {
   return (
     <section className='w-full bg-theme-yellow flex justify-center'>
       <div className='w-full max-w-7xl px-8 flex flex-col relative items-center z-10'>
-        <div className='w-full flex justify-between items-center'>
+        <div className='w-full flex flex-col md:flex-row justify-between items-center mb-8'>
           <SectionHeading>Quem somos</SectionHeading>
           <LogoBlack />
         </div>
@@ -22,12 +22,11 @@ function About() {
               className='flex items-center'
               href='/'
               rel='external'
-              href='/'
               target='_blank'
               rel='noopener'
             >
               <InstagramIconBlack />
-              <p className='ml-4 font-catamaran font-semibold text-4xl text-theme-black'>
+              <p className='ml-4 font-catamaran font-semibold text-2xl md:text-4xl text-theme-black'>
                 @darwinmusicstore
               </p>
             </a>
@@ -51,7 +50,7 @@ function About() {
               >
                 <path d='M38.3333 15.3334L23 24.9167L7.66668 15.3334V11.5001L23 21.0834L38.3333 11.5001V15.3334ZM38.3333 7.66675H7.66668C5.53918 7.66675 3.83334 9.37258 3.83334 11.5001V34.5001C3.83334 35.5167 4.23721 36.4918 4.9561 37.2107C5.67499 37.9295 6.65001 38.3334 7.66668 38.3334H38.3333C39.35 38.3334 40.325 37.9295 41.0439 37.2107C41.7628 36.4918 42.1667 35.5167 42.1667 34.5001V11.5001C42.1667 10.4834 41.7628 9.50839 41.0439 8.78951C40.325 8.07062 39.35 7.66675 38.3333 7.66675Z' />
               </svg>
-              <p className='ml-4 font-catamaran font-semibold text-4xl text-theme-black'>
+              <p className='ml-4 font-catamaran font-semibold text-2xl md:text-4xl text-theme-black'>
                 darwinmusicstore@gmail.com
               </p>
             </a>

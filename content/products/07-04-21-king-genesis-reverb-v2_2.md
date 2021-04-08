@@ -1,10 +1,11 @@
 ---
 title: "King Genesis Reverb V2"
 category: "Pedais"
+isLaunch: false
 price: 999.90
 priceText: "Em 3x sem juros no cartão"
 coverImage: "/static/img/image.png"
-video: "https://www.youtube.com/watch?v=7d_yAEMF7Z8"
+video: "https://www.youtube.com/embed/gbflVmASqMM"
 images:
   - "/static/img/image.png"
 ---

@@ -1,12 +1,17 @@
 ---
 title: "King Genesis Reverb V222222"
 category: "Pedais"
+isLaunch: true
 price: 50.90
 priceText: "À vista - R$ 100,00 à prazo"
 coverImage: "/static/img/image.png"
-video: "https://www.youtube.com/watch?v=7d_yAEMF7Z8"
+video: "https://www.youtube.com/embed/gbflVmASqMM"
 images:
   - "/static/img/image.png"
+  - "/static/img/image.png"
+  - "/static/img/image.png"
+  - "/static/img/image.png"
+  - "/static/img/puppy-and-adult-dog.jpg"
 ---
 
 ## Lorem ipsum dolor sit amet

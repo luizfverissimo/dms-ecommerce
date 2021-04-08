@@ -32,7 +32,7 @@ export const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='#pedais'>
                 <a
                   aria-label='Pedais'
                   title='Pedais'
@@ -43,7 +43,7 @@ export const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='#instrumentos'>
                 <a
                   aria-label='Product pricing'
                   title='Product pricing'
@@ -54,7 +54,7 @@ export const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='#outros'>
                 <a
                   aria-label='Outros'
                   title='Outros'
@@ -128,7 +128,7 @@ export const NavBar = () => {
                     <ul className='space-y-4'>
                       <li>
                         <a
-                          href='/'
+                          href='/#lancamentos'
                           aria-label='Lançamentos'
                           title='Lançamentos'
                           className='font-merri font-medium tracking-wide text-theme-yellow '
@@ -138,7 +138,7 @@ export const NavBar = () => {
                       </li>
                       <li>
                         <a
-                          href='/'
+                          href='/#pedais'
                           aria-label='Pedais'
                           title='Pedais'
                           className='font-merri font-medium tracking-wide text-theme-white '
@@ -148,7 +148,7 @@ export const NavBar = () => {
                       </li>
                       <li>
                         <a
-                          href='/'
+                          href='/#instrumentos'
                           aria-label='Instrumentos'
                           title='Instrumentos'
                           className='font-merri font-medium tracking-wide text-theme-white '
@@ -158,7 +158,7 @@ export const NavBar = () => {
                       </li>
                       <li>
                         <a
-                          href='/'
+                          href='/#outros'
                           aria-label='Outros'
                           title='Outros'
                           className='font-merri font-medium tracking-wide text-theme-white '
