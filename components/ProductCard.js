@@ -1,18 +1,20 @@
 import Link from 'next/link';
 
-function ProductCard() {
+function ProductCard({attributes, key, slug}) {
+  const priceString = attributes.price.toFixed(2).toString().replace('.', ',')
+
   return (
-    <div className='w-full max-w-xs mb-20 mx-auto lg:mx-0 flex flex-col items-center'>
-      <Link href='/'>
-        <img className='cursor-pointer' src='image.png' alt='Product Image' />
+    <div key={key} className='w-full max-w-xs mb-20 mx-auto lg:mx-0 flex flex-col items-center'>
+      <Link href={`/products/${slug}`}>
+        <img className='cursor-pointer' src={attributes.coverImage} alt={attributes.title} />
       </Link>
       <h3 className='w-full mt-4 font-catamaran text-2xl text-theme-black truncate'>
-        King Genesis Reverb V2
+      {attributes.title}
       </h3>
       <p className='w-full mt-4 bg-theme-yellow py-2 font-catamaran font-bold text-center text-2xl text-theme-black  '>
-        R$ 999.90
+        R$ {priceString}
       </p>
-      <Link href='/'>
+      <Link href={`/products/${slug}`}>
         <a className='w-full mt-4 bg-theme-black py-2 font-catamaran font-bold text-center text-2xl text-theme-yellow transition-all hover:text-theme-white'>
           Veja mais
         </a>
