@@ -2,7 +2,7 @@
 title: King Genesis Reverb V5
 category: Pedais
 isLaunch: true
-price: 499
+price: 500.9
 priceText: À vista - R$ 100,00 à prazo
 coverImage: /static/img/image.png
 images:
