@@ -1,17 +1,17 @@
 ---
-title: "King Genesis Reverb V222222"
-category: "Pedais"
+title: King Genesis Reverb V5
+category: Pedais
 isLaunch: true
-price: 50.90
-priceText: "À vista - R$ 100,00 à prazo"
-coverImage: "/static/img/image.png"
-video: "https://www.youtube.com/embed/a8yHWqukDi4"
+price: 499
+priceText: À vista - R$ 100,00 à prazo
+coverImage: /static/img/image.png
 images:
-  - "/static/img/image.png"
-  - "/static/img/image.png"
-  - "/static/img/image.png"
-  - "/static/img/image.png"
-  - "/static/img/puppy-and-adult-dog.jpg"
+  - /static/img/image.png
+  - /static/img/image.png
+  - /static/img/image.png
+  - /static/img/image.png
+  - /static/img/puppy-and-adult-dog.jpg
+video: https://www.youtube.com/embed/a8yHWqukDi4
 ---
 
 ## Lorem ipsum dolor sit amet
