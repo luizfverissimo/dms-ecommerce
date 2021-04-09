@@ -2,7 +2,7 @@ backend:
   name: github
   repo: luizfverissimo/birds-of-brazil-portfolio
   branch: main
-  site_domain: lcverissimo.netlify.app
+  site_domain: darwinmusicstore.netlify.app/
 media_folder: /static/img
 slug:
   encoding: 'ascii'
@@ -16,7 +16,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: true }
-      - { label: 'Categoria', name: 'category', widget: 'select', options: ["Pedais", "instrumentos, "Outros"], required: true }
+      - { label: 'Categoria', name: 'category', widget: 'select', options: ["Pedais", "Instrumentos", "Outros"], required: true }
       - { label: 'Lançamento', name: 'isLaunch', widget: 'boolean', default: true, required: true }
       - { label: 'Preço', name: 'price', widget: 'number', value_type: "float", default: 0.00, min: 0,  required: true }
       - { label: 'Texto do preço', name: 'priceText', widget: 'string', required: false }
