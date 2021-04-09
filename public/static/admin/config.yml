@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: luizfverissimo/birds-of-brazil-portfolio
+  repo: luizfverissimo/dms-ecommerce
   branch: main
   site_domain: darwinmusicstore.netlify.app/
 media_folder: /static/img
