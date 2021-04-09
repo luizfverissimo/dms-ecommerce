@@ -3,7 +3,7 @@ backend:
   repo: luizfverissimo/dms-ecommerce
   branch: main
   site_domain: darwinmusicstore.netlify.app
-media_folder: /static/img
+media_folder: public/static/img
 site_url: darwinmusicstore.netlify.app
 display_url: darwinmusicstore.netlify.app
 logo_url: https://darwinmusicstore.netlify.app/logo-dark-text.svg

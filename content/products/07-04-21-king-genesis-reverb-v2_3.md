@@ -4,11 +4,11 @@ category: "Instrumentos"
 isLaunch: true
 price: 50.90
 priceText: "À vista - R$ 100,00 à prazo"
-coverImage: "/static/img/image.png"
+coverImage: "/public/static/img/image.png"
 video: ""
 images:
-  - "/static/img/image.png"
-  - "/static/img/puppy-and-adult-dog.jpg"
+  - "/public/static/img/image.png"
+  - "/public/static/img/puppy-and-adult-dog.jpg"
 ---
 
 ## Lorem ipsum dolor sit amet

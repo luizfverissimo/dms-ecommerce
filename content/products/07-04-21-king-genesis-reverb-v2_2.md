@@ -4,10 +4,10 @@ category: "Pedais"
 isLaunch: false
 price: 999.90
 priceText: "Em 3x sem juros no cartão"
-coverImage: "/static/img/image.png"
+coverImage: "/public/static/img/image.png"
 video: "https://www.youtube.com/embed/a8yHWqukDi4"
 images:
-  - "/static/img/image.png"
+  - "/public/static/img/image.png"
 ---
 
 ## Lorem ipsum dolor sit amet

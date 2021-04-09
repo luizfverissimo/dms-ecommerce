@@ -6,7 +6,7 @@ function ProductCard({attributes, key, slug}) {
   return (
     <div key={key} className='w-full max-w-xs mb-20 mx-auto lg:mx-0 flex flex-col items-center'>
       <Link href={`/products/${slug}`}>
-        <img className='cursor-pointer' src={attributes.coverImage} alt={attributes.title} />
+        <img className='w-full max-h-80 object-cover cursor-pointer' src={attributes.coverImage.substr(7)} alt={attributes.title} />
       </Link>
       <h3 className='w-full mt-4 font-catamaran text-2xl text-theme-black truncate'>
       {attributes.title}

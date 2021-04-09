@@ -5,7 +5,7 @@ function ModalImage({ src, title, onCLickCloseModal }) {
     <div className='modal fixed w-full h-full top-0 left-0 flex items-center justify-center z-40'>
       <div className='modal-overlay absolute w-full h-full bg-theme-black opacity-60'></div>
 
-      <div className='bg-theme-black w-11/12 md:max-w-3xl mx-auto shadow-lg z-50 overflow-y-auto'>
+      <div className='bg-theme-black w-11/12 max-h-[80%] md:max-w-3xl mx-auto shadow-lg z-50 overflow-y-auto'>
         <div
           className='absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50'
           onClick={onCLickCloseModal}
@@ -36,7 +36,7 @@ function ModalImage({ src, title, onCLickCloseModal }) {
             </div>
           </div>
 
-          <img className='w-full px-2' src={src} alt={title} />
+          <img className='w-auto max-w-full max-h-[37.5rem] px-4' src={src} alt={title} />
 
           <div className='pointer-events-none flex justify-center py-4'>
             <Logo className="w-24 h-auto" />

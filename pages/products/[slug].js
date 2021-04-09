@@ -33,7 +33,7 @@ function ProductPage({ product }) {
       </Head>
       {isOpenModal && (
         <ModalImage
-          src={clickedImageSrc}
+          src={clickedImageSrc.substr(7)}
           title={attributes.title}
           onCLickCloseModal={handleCloseModal}
         />
@@ -46,7 +46,7 @@ function ProductPage({ product }) {
           {typeof attributes.images === 'string' ? (
             <img
               className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
-              src={attributes.images}
+              src={attributes.images.substr(7)}
               alt={`${attributes.title}-foto`}
               onClick={() => handleOpenModal(attributes.images)}
             />
@@ -56,7 +56,7 @@ function ProductPage({ product }) {
                 <img
                   className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
                   key={index}
-                  src={image}
+                  src={image.substr(7)}
                   alt={`${attributes.title}-foto-${index}`}
                   onClick={() => handleOpenModal(image)}
                 />
@@ -109,7 +109,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
-  console.log(slug);
 
   const product = await import(`../../content/products/${slug}.md`).catch(
     () => null
