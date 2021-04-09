@@ -25,3 +25,16 @@ body {
     font-size: 87.5%;
   }
 }
+
+.html-insert a {
+  @apply underline
+}
+
+.html-insert h2 {
+  @apply text-3xl
+}
+
+.html-insert ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}

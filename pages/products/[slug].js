@@ -43,17 +43,26 @@ function ProductPage({ product }) {
       <section className='px-8 w-full max-w-7xl flex flex-col'>
         <SectionHeading>Fotos</SectionHeading>
         <div className='w-full grid grid-cols-2 items-center sm:grid-cols-4 xl:grid-cols-6'>
-          {attributes.images.map((image, index) => {
-            return (
-              <img
-                className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
-                key={index}
-                src={image}
-                alt={`${attributes.title}-foto-${index}`}
-                onClick={() => handleOpenModal(image)}
-              />
-            );
-          })}
+          {typeof attributes.images === 'string' ? (
+            <img
+              className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
+              src={attributes.images}
+              alt={`${attributes.title}-foto`}
+              onClick={() => handleOpenModal(attributes.images)}
+            />
+          ) : (
+            attributes.images.map((image, index) => {
+              return (
+                <img
+                  className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
+                  key={index}
+                  src={image}
+                  alt={`${attributes.title}-foto-${index}`}
+                  onClick={() => handleOpenModal(image)}
+                />
+              );
+            })
+          )}
         </div>
         {attributes.video.length !== 0 && (
           <>
@@ -73,7 +82,7 @@ function ProductPage({ product }) {
 
         <SectionHeading>Descrição</SectionHeading>
         <div
-          className='w-full font-merri sm:text-lg'
+          className='html-insert w-full font-merri sm:text-lg'
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </section>
