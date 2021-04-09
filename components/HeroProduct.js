@@ -1,4 +1,4 @@
-function HeroProduct({ attributes }) {
+function HeroProduct({ attributes, onClickBuy }) {
   return (
     <div className='w-full h-[37.5rem] relative flex flex-col items-center justify-center'>
       <div className='absolute top-0 w-full h-full bg-gradient-to-r from-[#000] z-under' />
@@ -22,8 +22,8 @@ function HeroProduct({ attributes }) {
           {attributes.priceText}
         </p>
         <a
-          className='flex items-center mt-6 bg-theme-yellow px-6 py-3 font-catamaran font-black text-xl sm:text-2xl text-theme-black transition-all transform hover:-translate-y-1 hover:bg-theme-white'
-          href='/'
+          className='flex items-center mt-6 bg-theme-yellow px-6 py-3 cursor-pointer font-catamaran font-black text-xl sm:text-2xl text-theme-black transition-all transform hover:-translate-y-1 hover:bg-theme-white'
+          onClick={onClickBuy}
         >
           COMPRAR{' '}
           <svg

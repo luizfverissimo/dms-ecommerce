@@ -26,6 +26,10 @@ function ProductPage({ product }) {
     setClickedImageSrc(imageSrc);
   }
 
+  function handleBuyProduct() {
+    window.open(`https://wa.me/554388286301?text=Olá%20Darwin%20Music%20Store!%20Quero%20comprar%20o%20produto%20${attributes.title}!`)
+  }
+
   return (
     <main className='w=full flex flex-col items-center mb-20'>
       <Head>
@@ -39,7 +43,7 @@ function ProductPage({ product }) {
         />
       )}
       <NavBar />
-      <HeroProduct attributes={attributes} />
+      <HeroProduct attributes={attributes} onClickBuy={handleBuyProduct}/>
       <section className='px-8 w-full max-w-7xl flex flex-col'>
         <SectionHeading>Fotos</SectionHeading>
         <div className='w-full grid grid-cols-2 items-center sm:grid-cols-4 xl:grid-cols-6'>
