@@ -17,7 +17,7 @@ const Home = ({ productsList }) => {
         <SectionHeading id='lancamentos'>Lançamentos</SectionHeading>
         <div className='w-full grid grid-cols-1 items-center lg:grid-cols-2 xl:grid-cols-3'>
           {productsList.map((product, index) => {
-            if(product.attributes.isLaunch) return
+            if(!product.attributes.isLaunch) return
             return (
               <ProductCard
                 key={index}

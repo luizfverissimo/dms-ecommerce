@@ -4,13 +4,13 @@ category: Pedais
 isLaunch: true
 price: 500.9
 priceText: À vista - R$ 100,00 à prazo
-coverImage: /static/img/image.png
+coverImage: /public/static/img/image.png
 images:
-  - /static/img/image.png
-  - /static/img/image.png
-  - /static/img/image.png
-  - /static/img/image.png
-  - /static/img/puppy-and-adult-dog.jpg
+  - /public/static/img/image.png
+  - /public/static/img/image.png
+  - /public/static/img/image.png
+  - /public/static/img/image.png
+  - /public/static/img/puppy-and-adult-dog.jpg
 video: https://www.youtube.com/embed/a8yHWqukDi4
 ---
 
