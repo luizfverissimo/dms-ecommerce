@@ -5,7 +5,7 @@ isLaunch: true
 price: 50.90
 priceText: "À vista - R$ 100,00 à prazo"
 coverImage: "/static/img/image.png"
-video: "https://www.youtube.com/embed/gbflVmASqMM"
+video: "https://www.youtube.com/embed/a8yHWqukDi4"
 images:
   - "/static/img/image.png"
   - "/static/img/image.png"

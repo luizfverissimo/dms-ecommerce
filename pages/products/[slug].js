@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { useState } from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 
 import HeroProduct from '../../components/HeroProduct';
 import ModalImage from '../../components/ModalImage';
@@ -9,21 +9,21 @@ import { NavBar } from '../../components/Navbar';
 import SectionHeading from '../../components/SectionHeading';
 
 function ProductPage({ product }) {
-  const [isOpenModal, setIsOpenModal] = useState(false)
-  const [clickedImageSrc, setClickedImageSrc] = useState('')
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [clickedImageSrc, setClickedImageSrc] = useState('');
 
   if (!product) return <div>not found</div>;
 
   const { html, attributes } = product;
 
   function handleCloseModal() {
-    setIsOpenModal(false)
-    setClickedImageSrc("")
+    setIsOpenModal(false);
+    setClickedImageSrc('');
   }
 
   function handleOpenModal(imageSrc) {
-    setIsOpenModal(true)
-    setClickedImageSrc(imageSrc)
+    setIsOpenModal(true);
+    setClickedImageSrc(imageSrc);
   }
 
   return (
@@ -31,7 +31,13 @@ function ProductPage({ product }) {
       <Head>
         <title>{attributes.title} | Darwin Music Store</title>
       </Head>
-      {isOpenModal && <ModalImage src={clickedImageSrc} title={attributes.title} onCLickCloseModal={handleCloseModal}/>}
+      {isOpenModal && (
+        <ModalImage
+          src={clickedImageSrc}
+          title={attributes.title}
+          onCLickCloseModal={handleCloseModal}
+        />
+      )}
       <NavBar />
       <HeroProduct attributes={attributes} />
       <section className='px-8 w-full max-w-7xl flex flex-col'>
@@ -49,20 +55,27 @@ function ProductPage({ product }) {
             );
           })}
         </div>
-        <SectionHeading>Vídeo</SectionHeading>
-        <div className="relative pt-[56.25%]">
-          <iframe
-            className="absolute inset-0 w-full h-full"
-            src={attributes.video}
-            title={`${attributes.title} vídeo de demonstração`}
-            frameborder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowfullscreen
-          ></iframe>
-        </div>
+        {attributes.video.length !== 0 && (
+          <>
+            <SectionHeading>Vídeo</SectionHeading>
+            <div className='relative pt-[56.25%]'>
+              <iframe
+                className='absolute inset-0 w-full h-full'
+                src={attributes.video}
+                title={`${attributes.title} vídeo de demonstração`}
+                frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen
+              ></iframe>
+            </div>
+          </>
+        )}
 
         <SectionHeading>Descrição</SectionHeading>
-        <div className="w-full font-merri sm:text-lg" dangerouslySetInnerHTML={{__html: html}}></div>
+        <div
+          className='w-full font-merri sm:text-lg'
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
       </section>
     </main>
   );

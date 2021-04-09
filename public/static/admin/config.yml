@@ -1,46 +1,38 @@
 backend:
-  name: git-gateway
-  branch: master
-media_folder: static/img
+  name: github
+  repo: luizfverissimo/birds-of-brazil-portfolio
+  branch: main
+  site_domain: lcverissimo.netlify.app
+media_folder: /static/img
 slug:
   encoding: 'ascii'
   clean_accents: true
   sanitize_replacement: '_'
 collections:
-  - name: 'pages'
-    label: 'Pages'
-    files:
-      - label: 'Home'
-        name: 'home'
-        file: 'content/home.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: 'About'
-        name: 'about'
-        file: 'content/about.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-  - label: 'Blog'
-    name: 'blog'
-    folder: 'content/blogPosts'
+  - label: 'Produtos'
+    name: 'products'
+    folder: 'content/products'
     create: true
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Título', name: 'title', widget: 'string', required: true }
+      - { label: 'Categoria', name: 'category', widget: 'select', options: ["Pedais", "instrumentos, "Outros"], required: true }
+      - { label: 'Lançamento', name: 'isLaunch', widget: 'boolean', default: true, required: true }
+      - { label: 'Preço', name: 'price', widget: 'number', value_type: "float", default: 0.00, min: 0,  required: true }
+      - { label: 'Texto do preço', name: 'priceText', widget: 'string', required: false }
       - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
-          required: true,
-        }
-      - {
-          label: 'Featured Image',
-          name: 'thumbnail',
+          label: 'Foto da capa',
+          name: 'coverImage',
           widget: 'image',
           required: true,
+          allow_multiple: false
         }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+      - {
+          label: 'Fotos',
+          name: 'image',
+          widget: 'image',
+          required: true,
+          allow_multiple: true
+        }
+      - { label: 'Vídeo', name: 'video', widget: 'string', required: false}
+      - { label: 'Descrição', name: 'body', widget: 'markdown', required: true }

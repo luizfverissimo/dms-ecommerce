@@ -76,7 +76,7 @@ export const NavBar = () => {
             <button
               aria-label='Open Menu'
               title='Open Menu'
-              className='p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline'
+              className='p-2 -mr-1 transition duration-200 focus:outline-none focus:shadow-outline'
               onClick={() => setIsMenuOpen(true)}
             >
               <svg className='w-5 text-theme-white' viewBox='0 0 24 24'>
@@ -96,7 +96,7 @@ export const NavBar = () => {
             </button>
             {isMenuOpen && (
               <div className='absolute top-0 left-0 w-full'>
-                <div className='p-5 bg-theme-black border border-gray-700 rounded shadow-sm'>
+                <div className='p-5 bg-theme-black border border-gray-700 shadow-sm'>
                   <div className='flex items-center justify-between mb-4'>
                     <div>
                       <a
@@ -112,7 +112,7 @@ export const NavBar = () => {
                       <button
                         aria-label='Close Menu'
                         title='Close Menu'
-                        className='p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-theme-yellow focus:bg-theme-yellow focus:outline-none focus:shadow-outline'
+                        className='p-2 -mt-2 -mr-2 transition duration-200 hover:bg-theme-yellow focus:bg-theme-yellow focus:outline-none focus:shadow-outline'
                         onClick={() => setIsMenuOpen(false)}
                       >
                         <svg className='w-5 text-theme-white' viewBox='0 0 24 24'>
