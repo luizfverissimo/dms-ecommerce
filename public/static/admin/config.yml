@@ -40,9 +40,7 @@ collections:
           name: 'images',
           widget: 'image',
           required: true,
-          media_library:
-            config:
-              multiple: true     
+          allow_multiple: true
         }
       - { label: 'Vídeo', name: 'video', widget: 'string', required: false}
       - { label: 'Descrição', name: 'body', widget: 'markdown', required: true }
