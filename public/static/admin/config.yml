@@ -4,8 +4,13 @@ backend:
   branch: main
   site_domain: darwinmusicstore.netlify.app
 media_folder: public/static/img
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dqhq5frtg
+    api_key: 598489975237945
 site_url: darwinmusicstore.netlify.app
-display_url: darwinmusicstore.netlify.app
+display_url: https://darwinmusicstore.netlify.app
 logo_url: https://darwinmusicstore.netlify.app/logo-dark-text.svg
 slug:
   encoding: 'ascii'
@@ -34,7 +39,10 @@ collections:
           label: 'Fotos',
           name: 'images',
           widget: 'image',
-          required: true
+          required: true,
+          media_library:
+            config:
+              multiple: true     
         }
       - { label: 'Vídeo', name: 'video', widget: 'string', required: false}
       - { label: 'Descrição', name: 'body', widget: 'markdown', required: true }
