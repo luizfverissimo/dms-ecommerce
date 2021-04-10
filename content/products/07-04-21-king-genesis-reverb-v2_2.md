@@ -1,13 +1,14 @@
 ---
-title: "King Genesis Reverb V2"
-category: "Pedais"
+title: King Genesis Reverb V2
+category: Pedais
 isLaunch: false
-price: 999.90
-priceText: "Em 3x sem juros no cartão"
-coverImage: "/public/static/img/image.png"
-video: "https://www.youtube.com/embed/a8yHWqukDi4"
+price: 999.9
+priceText: Em 3x sem juros no cartão
+coverImage: /public/static/img/image.png
 images:
-  - "/public/static/img/image.png"
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/image_1_d5vrgz.png
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/boost1_oamifs.jpg
+video: https://www.youtube.com/embed/a8yHWqukDi4
 ---
 
 ## Lorem ipsum dolor sit amet
