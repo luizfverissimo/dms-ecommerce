@@ -9,6 +9,7 @@ media_library:
   config:
     cloud_name: dqhq5frtg
     api_key: 598489975237945
+    multiple: true
 site_url: darwinmusicstore.netlify.app
 display_url: https://darwinmusicstore.netlify.app
 logo_url: https://darwinmusicstore.netlify.app/logo-dark-text.svg
