@@ -4,8 +4,10 @@ category: Pedais
 isLaunch: true
 price: 500
 priceText: À vista!
-coverImage: /public/static/img/boost1.jpg
-images: /public/static/img/boost1.jpg
+coverImage: 
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/boost1_oamifs.jpg
+images: 
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/boost1_oamifs.jpg
 video: https://www.youtube.com/embed/G0IhtuRfJS4
 ---
 **Linha Boost**

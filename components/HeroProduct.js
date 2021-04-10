@@ -4,7 +4,7 @@ function HeroProduct({ attributes, onClickBuy }) {
       <div className='absolute top-0 w-full h-full bg-gradient-to-r from-[#000] z-under' />
       <img
         className='absolute top-0 w-full h-full object-cover z-under-10'
-        src={attributes.coverImage.substr(7)}
+        src={attributes.coverImage[0]}
         alt='Hero Background'
       />
 

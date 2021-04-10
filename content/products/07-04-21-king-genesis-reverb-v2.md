@@ -4,13 +4,11 @@ category: Pedais
 isLaunch: true
 price: 500.9
 priceText: À vista - R$ 100,00 à prazo
-coverImage: /public/static/img/image.png
+coverImage:
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/image_1_d5vrgz.png
 images:
-  - /public/static/img/image.png
-  - /public/static/img/image.png
-  - /public/static/img/image.png
-  - /public/static/img/image.png
-  - /public/static/img/puppy-and-adult-dog.jpg
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/image_1_d5vrgz.png
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/boost1_oamifs.jpg
 video: https://www.youtube.com/embed/a8yHWqukDi4
 ---
 
@@ -18,5 +16,5 @@ video: https://www.youtube.com/embed/a8yHWqukDi4
 
 **Consectetur adipiscing elit**. Curabitur placerat finibus lectus sed convallis. Sed laoreet libero ut arcu congue, et ornare eros dignissim. Suspendisse potenti. Cras ornare ipsum quis sapien commodo consequat.
 
-+ Consectetur
-+ Consectetur
+- Consectetur
+- Consectetur

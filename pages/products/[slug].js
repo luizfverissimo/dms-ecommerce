@@ -27,7 +27,9 @@ function ProductPage({ product }) {
   }
 
   function handleBuyProduct() {
-    window.open(`https://wa.me/554388286301?text=Olá%20Darwin%20Music%20Store!%20Quero%20comprar%20o%20produto%20${attributes.title}!`)
+    window.open(
+      `https://wa.me/554388286301?text=Olá%20Darwin%20Music%20Store!%20Quero%20comprar%20o%20produto%20${attributes.title}!`
+    );
   }
 
   return (
@@ -37,36 +39,27 @@ function ProductPage({ product }) {
       </Head>
       {isOpenModal && (
         <ModalImage
-          src={clickedImageSrc.substr(7)}
+          src={clickedImageSrc}
           title={attributes.title}
           onCLickCloseModal={handleCloseModal}
         />
       )}
       <NavBar />
-      <HeroProduct attributes={attributes} onClickBuy={handleBuyProduct}/>
+      <HeroProduct attributes={attributes} onClickBuy={handleBuyProduct} />
       <section className='px-8 w-full max-w-7xl flex flex-col'>
         <SectionHeading>Fotos</SectionHeading>
         <div className='w-full grid grid-cols-2 items-center sm:grid-cols-4 xl:grid-cols-6'>
-          {typeof attributes.images === 'string' ? (
-            <img
-              className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
-              src={attributes.images.substr(7)}
-              alt={`${attributes.title}-foto`}
-              onClick={() => handleOpenModal(attributes.images)}
-            />
-          ) : (
-            attributes.images.map((image, index) => {
-              return (
-                <img
-                  className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
-                  key={index}
-                  src={image.substr(7)}
-                  alt={`${attributes.title}-foto-${index}`}
-                  onClick={() => handleOpenModal(image)}
-                />
-              );
-            })
-          )}
+          {attributes.images.map((image, index) => {
+            return (
+              <img
+                className='w-36 h-36 mb-3 cursor-pointer object-cover transform transition-all hover:-translate-y-2'
+                key={index}
+                src={image}
+                alt={`${attributes.title}-foto-${index}`}
+                onClick={() => handleOpenModal(image)}
+              />
+            );
+          })}
         </div>
         {attributes.video.length !== 0 && (
           <>
