@@ -4,7 +4,8 @@ category: Pedais
 isLaunch: false
 price: 999.9
 priceText: Em 3x sem juros no cartão
-coverImage: /public/static/img/image.png
+coverImage:
+  - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/image_1_d5vrgz.png
 images:
   - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/image_1_d5vrgz.png
   - https://res.cloudinary.com/dqhq5frtg/image/upload/v1618062914/DMS/boost1_oamifs.jpg
