@@ -1,23 +1,48 @@
-# Example app using Netlify CMS
+<p align="center">
+  <img src="./public/logo-dark-text.svg" width="190px"/>
+</p>
 
-[Netlify CMS](https://www.netlifycms.org/) is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows. You can use it with any static site generator to create faster, more flexible web projects. Content is stored in your Git repository alongside your code for easier versioning, multi-channel publishing, and the option to handle content updates directly in Git.
+<h1 align="center">DMS E-commerce 🎸</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## How to use
+> Darwin Music Store, E-commerce created with React.js, Next.js, Tailwind CSS and Netilify CMS.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+### 🏠 [Homepage](https://github.com/luizfverissimo/dms-ecommerce)
 
-```bash
-npx create-next-app --example with-netlify-cms with-netlify-cms-app
-# or
-yarn create next-app --example with-netlify-cms with-netlify-cms-app
+### ✨ [Demo](https://darwinmusicstore.netlify.app/)
+
+## Screenshots
+<img src="img/1.png" alt="1" width="400"/> <img src="img/2.png" alt="2" width="400"/> <img src="img/3.png" alt="3" width="400"/><br>
+<img src="img/4.png" alt="4" width="250"/> <img src="img/5.png" alt="5" width="250"/>
+
+## Install
+
+```sh
+yarn # npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Usage
 
-## How it works
+```sh
+yarn dev # npm run dev
+```
 
-Sites take its content from markdown files in `/content`. Two of pages (`home` and `about`) are referencing directly their respective markdown files.
+## Author
 
-Blog component loads all posts (during build!) and lists them out [How to load multiple md files](https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f)
+👤 **LF Verissimo**
 
-Updated to take advantange of the new `getStaticPaths` and `getStaticProps` data-fetching functions.
+* Website: https://lfverissimo.com
+* Github: [@luizfverissimo](https://github.com/luizfverissimo)
+* LinkedIn: [@lfverissimo](https://linkedin.com/in/lfverissimo)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
